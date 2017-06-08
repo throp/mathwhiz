@@ -12,11 +12,11 @@ To run this example skill you need to do two things. The first is to deploy the 
 2. Click on the Create a Lambda Function or Get Started Now button.
 3. Skip the blueprint
 4. Configure Triggers Screen click the outlined empty square and select Alexa Skill Kit.  Click Next
-5. Name the Lambda Function "Hello-World-Example-Skill".
+5. Name the Lambda Function "MathWhiz-Skill".
 6. Select the runtime as Java 8
 7. Go to the the root directory containing pom.xml, and run 'mvn assembly:assembly -DdescriptorId=jar-with-dependencies package'. This will generate a zip file named "alexa-skills-kit-samples-1.0-jar-with-dependencies.jar" in the target directory.
 8. Select Code entry type as "Upload a .ZIP file" and then upload the "alexa-skills-kit-samples-1.0-jar-with-dependencies.jar" file from the build directory to Lambda
-9. Set the Handler as helloworld.HelloWorldSpeechletRequestStreamHandler (this refers to the Lambda RequestStreamHandler file in the zip).
+9. Set the Handler as com.bennorthrop.mathwhiz.MathWhizSpeechletRequestStreamHandler (this refers to the Lambda RequestStreamHandler file in the zip).
 10. Create a basic execution role and click create.
 11. Leave the Advanced settings as the defaults.
 12. Click "Next" and review the settings then click "Create Function"
@@ -24,7 +24,7 @@ To run this example skill you need to do two things. The first is to deploy the 
 
 ### Alexa Skill Setup
 1. Go to the [Alexa Console](https://developer.amazon.com/edw/home.html) and click Add a New Skill.
-2. Set "HelloWorld" as the skill name and "greeter" as the invocation name, this is what is used to activate your skill. For example you would say: "Alexa, tell Greeter to say hello."
+2. Set "MathWhiz" as the skill name and "greeter" as the invocation name, this is what is used to activate your skill. For example you would say: "Alexa, ask Math Whiz for a fact."
 3. Select the Lambda ARN for the skill Endpoint and paste the ARN copied from above. Click Next.
 4. Copy the Intent Schema from the included IntentSchema.json.
 5. Copy the Sample Utterances from the included SampleUtterances.txt. Click Next.
@@ -36,5 +36,5 @@ To run this example skill you need to do two things. The first is to deploy the 
 
 ## Examples
 ### One-shot model:
-    User: "Alexa, tell Greeter to say hello."
-    Alexa: "Hello World!"
+    User: "Alexa, ask Math Whiz what is one plus one?"
+    Alexa: "The answer is two"

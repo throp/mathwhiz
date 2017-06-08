@@ -1,10 +1,24 @@
 {
   "intents": [
     {
-      "intent": "HelloWorldIntent"
+      "intent": "GetFactIntent"
     },
     {
-      "intent": "AMAZON.HelpIntent"
+      "slots": [
+        {
+          "name": "FirstNumber",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Operator",
+          "type": "LIST_OF_OPERATORS"
+        },
+        {
+          "name": "SecondNumber",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "DoMathIntent"
     }
   ]
 }

@@ -1,7 +1,6 @@
-HelloWorldIntent say hello
-HelloWorldIntent say hello world
-HelloWorldIntent hello
-HelloWorldIntent say hi
-HelloWorldIntent say hi world
-HelloWorldIntent hi
-HelloWorldIntent how are you
+GetFactIntent tell me something cool
+GetFactIntent tell me a math fact
+GetFactIntent tell me something
+GetFactIntent tell me
+GetFactIntent tell something to me
+DoMathIntent what is {FirstNumber} {Operator} {SecondNumber}
